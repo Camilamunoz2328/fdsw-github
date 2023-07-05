@@ -55,8 +55,8 @@
                     ¡Bienvenido/a a mi CV en línea! Aquí puedes conocer mi trayectoria como Técnico en Enfermería de Nivel Superior y descubrir mi pasión por la programación web. ¡Explora mi experiencia y habilidades!
                 </p>
                 <div class="mb-5 pb-5">
-                    <button class="btn btn-lg btn-outline-info text-dark me-4">Ver Trabajos</button>
-                    <button class="btn btn-lg btn-info text-dark">Contacto</button>
+                    <button class="btn btn-lg btn-outline-info text-dark me-4" onclick="scrollToSection('Mis-trabajos')">Ver Trabajos</button>
+                    <button class="btn btn-lg btn-info text-dark" onclick="scrollToSection('Contacto')">Contacto</button>
                 </div>
             </div>
         </div>
@@ -70,40 +70,30 @@
         <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
 
         <p class="my-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam distinctio, odit laborum aliquam
-            earum itaque cum sequi, dolorem optio vol
+            ¡Hola! Soy Camila, una TENS chilena de Puente Alto, Santiago de Chile. Durante 5 años, trabajé como TENS, brindando atención de calidad a pacientes y desarrollando habilidades en el campo de la salud. Actualmente, estoy buscando nuevas oportunidades laborales y estoy estudiando desarrollo web para expandir mis conocimientos y perspectivas profesionales. ¡Me encanta combinar mi experiencia en el cuidado de la salud con mi pasión por la tecnología!
         </p>
 
 
         <div class="row">
             <div class="col-12 col-md-4">
-                <i class="fas fa-camera fa-3x my-3"></i>
-                <h3 class="my-3 fw-bold">Fotógrafa de comida</h3>
+                <i class="fas fa-code fa-3x my-3"></i>
+                <h3 class="my-3 fw-bold">Desarrollo web</h3>
                 <p class="my-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Como aspirante a desarrolladora web, disfruto aprender nuevos lenguajes de programación y construir aplicaciones web interactivas. Mi objetivo es crear experiencias digitales intuitivas y accesibles. Estoy entusiasmada por combinar mis habilidades técnicas con mi experiencia en el campo de la salud para desarrollar soluciones innovadoras y mejorar la calidad de vida de las personas.
                 </p>
             </div>
             <div class="col-12 col-md-4">
-                <i class="fas fa-bullhorn fa-3x my-3"></i>
-                <h3 class="my-3 fw-bold">Crítica culinaria</h3>
+                <i class="fas fa-medkit fa-3x my-3"></i>
+                <h3 class="my-3 fw-bold">Experiencia en atención sanitaria</h3>
                 <p class="my-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Con 5 años de experiencia como TENS, he adquirido un sólido conocimiento en el cuidado de pacientes y en la gestión de situaciones de emergencia. He trabajado en diversos entornos médicos, brindando atención compasiva y asistencia vital. Mi pasión por ayudar a los demás me motiva a buscar nuevas oportunidades en el campo de la salud, donde pueda aplicar mis habilidades y contribuir al bienestar de las personas.
                 </p>
             </div>
             <div class="col-12 col-md-4">
-                <i class="far fa-map fa-3x my-3"></i>
-                <h3 class="my-3 fw-bold">Bloggera de viajes</h3>
+                <i class="fa fa-trophy fa-3x my-3"></i>
+                <h3 class="my-3 fw-bold">Habilidades y logros</h3>
                 <p class="my-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    A lo largo de mi carrera, he desarrollado habilidades en comunicación efectiva, trabajo en equipo y resolución de problemas. Mi dedicación y ética laboral me han permitido brindar un servicio de calidad y establecer relaciones sólidas con pacientes y colegas. Estoy comprometida con el aprendizaje continuo y siempre busco oportunidades para crecer personal y profesionalmente. ¡Estoy emocionada por seguir ampliando mis habilidades y contribuir al éxito de proyectos desafiantes en el campo del desarrollo web!
                 </p>
             </div>
         </div>
@@ -221,6 +211,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
